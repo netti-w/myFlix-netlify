@@ -14,24 +14,24 @@ const Models = require('../models.js'); //require (import) 'custom' models.js
 // mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const app = express();
-// app.use(express.json());
+app.use(express.json());
 const { API_ROOT } = require('../config');
 
-// Body parser middleware passing data as JSON
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// // Body parser middleware passing data as JSON
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
 
-// CORS - allowing requests from other specified origins (here: default all origins)
-const cors = require('cors');
-app.use(cors());
+// // CORS - allowing requests from other specified origins (here: default all origins)
+// const cors = require('cors');
+// app.use(cors());
 
-// Passport authentication middleware
-let auth = require('../auth')(app);
-const passport = require('passport');
-require('../passport');
+// // Passport authentication middleware
+// let auth = require('../auth')(app);
+// const passport = require('passport');
+// require('../passport');
 
-// Morgan middleware logging requests
-app.use(morgan('common'));
+// // Morgan middleware logging requests
+// app.use(morgan('common'));
 
 // function serving all requests of static file (here:"documenation.html") from public folder
 // app.use(express.static('public'));
