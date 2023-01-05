@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const uuid = require('uuid');
 const { check, validationResult } = require('express-validator');
 
-//const mongoose = require('mongoose'); // require (import) mongoose package
+const mongoose = require('mongoose'); // require (import) mongoose package
 // const Models = require('../models.js'); //require (import) 'custom' models.js
 
 // Connecting LOCAL myFlixDB via Mongoose to perform CRUD operations
