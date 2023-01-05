@@ -1,6 +1,6 @@
 const express = require('express');
 const serverless = require('serverless-http');
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // const uuid = require('uuid');
 // const { check, validationResult } = require('express-validator');
 
