@@ -1,7 +1,7 @@
 {
   "name": "netlify-express",
   "version": "0.0.1",
-  "description": "Example of how to deploy a Express.js Netlify app.",
+  "description": "Deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
     "build": "netlify-lambda build express",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/warpedpuppy/cf-express-on-netlify"
+    "url": "git+https://github.com/netti-w/myFlix-netlify"
   },
   "keywords": [
     "netlify",
     "express.js"
   ],
-  "author": "warpedpuppy",
-  "homepage": "https://github.com/warpedpuppy/cf-express-on-netlify",
+  "author": "",
+  "homepage": "https://github.com/netti-w/myFlix-netlify",
   "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.19.0",
