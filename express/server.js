@@ -1,8 +1,8 @@
 const express = require('express');
 const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
-// const uuid = require('uuid');
-// const { check, validationResult } = require('express-validator');
+const uuid = require('uuid');
+const { check, validationResult } = require('express-validator');
 
 //const mongoose = require('mongoose'); // require (import) mongoose package
 // const Models = require('../models.js'); //require (import) 'custom' models.js
@@ -22,7 +22,7 @@ const { API_ROOT } = require('../config');
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 // // CORS - allowing requests from other specified origins (here: default all origins)
-// const cors = require('cors');
+const cors = require('cors');
 // app.use(cors());
 
 // // Passport authentication middleware
